@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "project_name": "Mr Srinivas - Mythri Nagar",
+    "project_type": "RESIDENTIAL",
+    "location": "MYTHRI NAGAR",
+    "area": "",
+    "builtup_area": "",
+    "year": "2021-2022",
+    "scope_of_work": " PLANNING, INTERIOR, LANDSCAPE.",
+    "images": {
+      "img1": "assets/projects/Architecture Projects/Mr Srinivas - Mythri Nagar/1.jpg",
+      "img2": "assets/projects/Architecture Projects/Mr Srinivas - Mythri Nagar/2.jpg",
+      "img3": "assets/projects/Architecture Projects/Mr Srinivas - Mythri Nagar/3.jpg",
+      "img4": "assets/projects/Architecture Projects/Mr Srinivas - Mythri Nagar/4.jpg",
+      "img5": "assets/projects/Architecture Projects/Mr Srinivas - Mythri Nagar/5.jpg",
+      "img6": "assets/projects/Architecture Projects/Mr Srinivas - Mythri Nagar/6.jpg"
+    }
+  },
+  {
+    "id": 2,
+    "project_name": "Ms Jyothi - Dollar Villas",
+    "project_type": "RESIDENTIAL",
+    "location": "PRAGATHI NAGAR",
+    "area": "",
+    "builtup_area": "",
+    "year": "2021",
+    "scope_of_work": "INTERIORS",
+    "images": {
+      "img1": "assets/projects/Architecture Projects/Ms Jyothi - Dollar Villas/1.jpg",
+      "img2": "assets/projects/Architecture Projects/Ms Jyothi - Dollar Villas/2.jpg",
+      "img3": "assets/projects/Architecture Projects/Ms Jyothi - Dollar Villas/3.jpg",
+      "img4": "assets/projects/Architecture Projects/Ms Jyothi - Dollar Villas/4.jpg",
+      "img5": "assets/projects/Architecture Projects/Ms Jyothi - Dollar Villas/5.jpg",
+      "img6": "assets/projects/Architecture Projects/Ms Jyothi - Dollar Villas/6.jpg"
+    }
+  },
+  {
+    "id": 3,
+    "project_name": "Mr L N Reddy - Hitech City",
+    "project_type": "COMMERCIAL",
+    "location": "HYDERABAD",
+    "area": "",
+    "builtup_area": "",
+    "year": "2021",
+    "scope_of_work": "EXTERIORS",
+    "images": {
+      "img1": "assets/projects/Architecture Projects/Mr L N Reddy - Hitech City/1.jpg",
+      "img2": "assets/projects/Architecture Projects/Mr L N Reddy - Hitech City/2.jpg",
+      "img3": "assets/projects/Architecture Projects/Mr L N Reddy - Hitech City/3.jpg",
+      "img4": "assets/projects/Architecture Projects/Mr L N Reddy - Hitech City/4.jpg",
+      "img5": "assets/projects/Architecture Projects/Mr L N Reddy - Hitech City/5.jpg",
+      "img6": "assets/projects/Architecture Projects/Mr L N Reddy - Hitech City/6.jpg"
+    }
+  },
+  {
+    "id": 4,
+    "project_name": "Satyanarayana Reddy - Vanaparthy",
+    "project_type": "RESIDENTIAL",
+    "location": "VANAPARTHY",
+    "area": "",
+    "builtup_area": "",
+    "year": "2021",
+    "scope_of_work": "PLANNING, INTERIOR, LANDSCAPE.",
+    "images": {
+      "img1": "assets/projects/Architecture Projects/Satyanarayana Reddy - Vanaparthy/1.jpg",
+      "img2": "assets/projects/Architecture Projects/Satyanarayana Reddy - Vanaparthy/2.jpg",
+      "img3": "assets/projects/Architecture Projects/Satyanarayana Reddy - Vanaparthy/3.jpg",
+      "img4": "assets/projects/Architecture Projects/Satyanarayana Reddy - Vanaparthy/4.jpg",
+      "img5": "assets/projects/Architecture Projects/Satyanarayana Reddy - Vanaparthy/5.jpg",
+      "img6": "assets/projects/Architecture Projects/Satyanarayana Reddy - Vanaparthy/6.jpg"
+    }
+  },
+  {
+    "id": 5,
+    "project_name": "Mrs.Anitha - Kakatiya Hills",
+    "project_type": "APARTMENT",
+    "location": "KAKATIYA HILLS",
+    "area": "",
+    "builtup_area": "",
+    "year": "2020",
+    "scope_of_work": "PLANNING",
+    "images": {
+      "img1": "assets/projects/Architecture Projects/Mrs.Anitha - Kakatiya Hills/1.jpg",
+      "img2": "assets/projects/Architecture Projects/Mrs.Anitha - Kakatiya Hills/2.jpg",
+      "img3": "assets/projects/Architecture Projects/Mrs.Anitha - Kakatiya Hills/4.jpg",
+      "img4": "assets/projects/Architecture Projects/Mrs.Anitha - Kakatiya Hills/3.jpg",
+      "img5": "assets/projects/Architecture Projects/Mrs.Anitha - Kakatiya Hills/1.jpg",
+      "img6": "assets/projects/Architecture Projects/Mrs.Anitha - Kakatiya Hills/4.jpg"
+    }
+  },
+  {
+    "id": 6,
+    "project_name": "Apsuja Infratech - Machabolaram",
+    "project_type": "APARTMENT",
+    "location": "MACHABOLLARAM",
+    "area": "",
+    "builtup_area": "",
+    "year": "2021",
+    "scope_of_work": "PLANNING.",
+    "images": {
+      "img1": "assets/projects/Architecture Projects/Apsuja Infratech - Machabolaram/1.jpg",
+      "img2": "assets/projects/Architecture Projects/Apsuja Infratech - Machabolaram/2.jpg",
+      "img3": "assets/projects/Architecture Projects/Apsuja Infratech - Machabolaram/3.jpg",
+      "img4": "assets/projects/Architecture Projects/Apsuja Infratech - Machabolaram/4.jpg",
+      "img5": "assets/projects/Architecture Projects/Apsuja Infratech - Machabolaram/5.jpg",
+      "img6": "assets/projects/Architecture Projects/Apsuja Infratech - Machabolaram/6.jpg"
+    }
+  }
+]

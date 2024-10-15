@@ -1,0 +1,157 @@
+[
+    {
+      "id": 1,
+      "project_name": "The Elegant Retreat",
+      "project_type": "Residential",
+        "location": "Kompalli",
+        "year": "2023",
+        "scope_of_work": "Architecture, Renovation, Interior Design, and Project Management Consulting",
+        "land_area":"4180 sq ft",
+        "buildup_area":"4125 sq ft",
+        "budget":"1.5 Cr",
+      "images": [
+        {
+          "src": "assets/projects/l/1/3.png"
+        },
+        {
+            "src": "assets/projects/l/1/2.png"
+        },
+        {
+            "src": "assets/projects/l/1/1.png"
+        },
+        {
+            "src": "assets/projects/l/1/4.png"
+        }
+
+      ]
+    },
+    {
+        "id": 2,
+        "project_name": "Harvest Heaven",
+        "project_type": "Residential",
+        "location": "Manoharabad",
+        "year": "2024",
+        "scope_of_work": "Architecture, Project Coordination, and Landscape Design",
+        "land_area":"1.15 acre",
+        "buildup_area":"6100 sq ft",
+        "budget":"2.1 Cr",
+        "images": [
+          {
+            "src": "assets/projects/l/2/1.jpg"
+          },
+          {
+              "src": "assets/projects/l/2/2.jpg"
+          },
+          {
+              "src": "assets/projects/l/2/3.jpg"
+          },
+          {
+              "src": "assets/projects/l/2/4.jpg"
+          }
+
+        ]
+      },
+      {
+        "id": 3,
+        "project_name": "Garuda Resorts",
+        "project_type": "Residential",
+        "location": "kanukunta",
+        "year": "2024",
+        "scope_of_work": "Architecture, Project Coordination, and Landscape Design",
+        "land_area":"1.18 acre",
+        "buildup_area":"20000 sq ft",
+        "budget":"7 Cr",
+        "images": [
+          {
+            "src": "assets/projects/l/3/6.jpg"
+          },
+          {
+              "src": "assets/projects/l/3/2.jpg"
+          },
+          {
+            "src": "assets/projects/l/3/3.jpg"
+          },
+          {
+            "src": "assets/projects/l/3/4.jpg"
+          },
+          {
+            "src": "assets/projects/l/3/5.jpg"
+          },
+          {
+              "src": "assets/projects/l/3/9.jpg"
+          },
+          {
+            "src": "assets/projects/l/3/7.jpg"
+          },
+          {
+            "src": "assets/projects/l/3/8.jpg"
+          },
+          {
+            "src": "assets/projects/l/3/1.jpg"
+          },
+          {
+              "src": "assets/projects/l/3/10.jpg"
+          },
+          {
+            "src": "assets/projects/l/3/11.jpg"
+          },
+          {
+            "src": "assets/projects/l/3/12.jpg"
+          }
+
+        ]
+      },
+      {
+        "id": 4,
+        "project_name": "Fields of Fortune",
+        "project_type": "Residential",
+        "location": "Ramalingampalli",
+        "year": "2024",
+        "scope_of_work": "Architecture, Project Coordination, and Landscape Design",
+        "land_area":"4 acre",
+        "buildup_area":"2850 sq ft",
+        "budget":"1 Cr",
+        "images": [
+          {
+            "src": "assets/projects/l/4/3.jpg"
+          },
+          {
+              "src": "assets/projects/l/4/2.jpg"
+          },
+          {
+            "src": "assets/projects/l/4/1.jpg"
+          },
+          {
+            "src": "assets/projects/l/4/4.jpg"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "project_name": "Jaihind Enclave",
+        "project_type": "Commercial",
+        "location": "Madhapur",
+        "year": "2023",
+        "scope_of_work": "Architecture, Renovation, Interior Design, and Project Coordination",
+        "land_area":"8390 sq ft",
+        "buildup_area":"29750 sq ft",
+        "budget":"10 Cr",
+        "images": [
+          {
+            "src": "assets/projects/l/5/3.jpg"
+          },
+          {
+              "src": "assets/projects/l/5/2.jpg"
+          },
+          {
+            "src": "assets/projects/l/5/1.jpg"
+          },
+          {
+            "src": "assets/projects/l/5/4.jpg"
+          },
+          {
+            "src": "assets/projects/l/5/5.jpg"
+          }
+        ]
+      }
+]

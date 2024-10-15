@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Details with Zoom and References</title>
+    <style>
+        /* Style for the gallery */
+        .image1 {
+            width: 200px;
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .image1:hover {
+            transform: scale(1.1);
+        }
+        /* Modal styles */
+
+
+        .top-section {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .left {
+            flex-basis: 50%;
+        }
+
+        .right {
+            display: flex;
+            flex-basis: 50%;
+            padding-left: 20px;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .zoomed-image {
+            width: 100%;
+            height: auto;
+            border: 2px solid #ccc;
+        }
+
+        .bottom-section {
+            margin-top: 10px;
+        }
+
+        .references {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .references img {
+            width: 150px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .references img:hover {
+            transform: scale(1.1);
+        }
+
+        .modal {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 1200px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .modal-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .modal-description {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .modal-description ul {
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+
+        .modal-description li {
+            margin: 5px 0;
+        }
+
+        .modal-references img {
+            width: 50px;
+            height: auto;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: transform 0.2s;
+        }
+
+        .modal-references img:hover {
+            transform: scale(1.1);
+        }
+        .top-section {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            flex-direction: row;
+        }
+        @media screen and (max-width:600px) {
+            .top-section{
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="images-container"></div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="top-section">
+                <div class="left">
+                    <img id="modal-image" class="zoomed-image" alt="Zoomed Image">
+                </div>
+                <div class="right">
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-description"></p>
+                </div>
+            </div>
+            <div class="bottom-section">
+                <h3>Reference Photos:</h3>
+                <div id="modal-references" class="references"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const modal = document.getElementById("modal");
+            const modalImage = document.getElementById("modal-image");
+            const modalTitle = document.getElementById("modal-title");
+            const modalDescription = document.getElementById("modal-description");
+            const modalReferences = document.getElementById("modal-references");
+            const closeModal = document.querySelector(".close");
+            let currentMainImageSrc = '';
+
+            fetch('Architecture Projects copy.json')
+                .then(response => response.json())
+                .then(data => {
+                    const imagesContainer = document.getElementById("images-container");
+                    data.forEach(project => {
+                        if (project.images.length > 0) {
+                            // Only use the first image
+                            const firstImage = project.images[0];
+                            const img = document.createElement('img');
+                            img.src = firstImage.src;
+                            img.alt = firstImage.alt;
+                            img.classList.add('image1');
+                            imagesContainer.appendChild(img);
+
+                            // Add click event for the modal
+                            img.addEventListener('click', function() {
+                                modal.style.display = "block";
+                                currentMainImageSrc = img.getAttribute("src");
+                                const title = project.project_name;
+                                const description = `<ul>
+                                    <li>Type: ${project.project_type}</li>
+                                    <li>Location: ${project.location}</li>
+                                    <li>Year: ${project.year}</li>
+                                    <li>Scope of Work: ${project.scope_of_work}</li>
+                                </ul>`;
+                                const references = project.images.map(ref => ref.src);
+
+                                // Set modal content
+                                modalImage.src = currentMainImageSrc;
+                                modalTitle.textContent = title;
+                                modalDescription.innerHTML = description;
+
+                                // Clear and add reference images
+                                modalReferences.innerHTML = '';
+                                references.forEach(ref => {
+                                    const refImg = document.createElement('img');
+                                    refImg.src = ref.trim();
+                                    modalReferences.appendChild(refImg);
+
+                                    // Click event for reference images
+                                    refImg.addEventListener('click', function() {
+                                        const tempSrc = modalImage.src;
+                                        modalImage.src = refImg.src;
+                                        refImg.src = tempSrc;
+                                    });
+                                });
+                            });
+                        }
+                    });
+                })
+                .catch(error => console.error('Error fetching JSON data:', error));
+
+            closeModal.addEventListener('click', function() {
+                modal.style.display = "none";
+            });
+
+            window.addEventListener('click', function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            });
+        });
+    </script>
+</body>
+</html>

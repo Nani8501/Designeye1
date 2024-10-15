@@ -1,0 +1,96 @@
+[
+    {
+      "id": 1,
+      "project_name": "Collaborativ County",
+      "project_type": "Urban Development",
+      "location":"Shahbad",
+      "year":2023,
+        "scope_of_work": "Architecture and Landscape Design",
+        "land_area":"23 ac",
+      "images": [
+        {
+          "src": "assets/projects/m/1/1.png"
+        },
+        {
+            "src": "assets/projects/m/1/2.png"
+        },
+        {
+            "src": "assets/projects/m/1/3.png"
+        },
+        {
+            "src": "assets/projects/m/1/4.png"
+        },
+        {
+            "src": "assets/projects/m/1/5.png"
+        },
+        {
+            "src": "assets/projects/m/1/6.png"
+        },
+        {
+            "src": "assets/projects/m/1/7.png"
+        },
+        {
+            "src": "assets/projects/m/1/8.png"
+        },
+        {
+            "src": "assets/projects/m/1/9.png"
+        },
+        {
+            "src": "assets/projects/m/1/10.png"
+        },
+        {
+            "src": "assets/projects/m/1/11.png"
+        },
+        {
+            "src": "assets/projects/m/1/12.png"
+        },
+        {
+            "src": "assets/projects/m/1/13.png"
+        }
+
+      ]
+    },
+    {
+        "id": 1,
+        "project_name": "Charvitha Meadows",
+        "project_type": "Urban Development",
+        "location":"Siddipet",
+        "year":2023,
+          "scope_of_work": "Architecture and Landscape Design",
+          "land_area":"23 ac",
+        "images": [
+          {
+            "src": "assets/projects/m/2/9.jpg"
+          },
+          {
+              "src": "assets/projects/m/2/2.jpg"
+          },
+          {
+              "src": "assets/projects/m/2/3.jpg"
+          },
+          {
+              "src": "assets/projects/m/2/4.jpg"
+          },
+          {
+              "src": "assets/projects/m/2/5.jpg"
+          },
+          {
+              "src": "assets/projects/m/2/6.jpg"
+          },
+          {
+              "src": "assets/projects/m/2/7.jpg"
+          },
+          {
+              "src": "assets/projects/m/2/8.jpg"
+          },
+          {
+              "src": "assets/projects/m/2/1.jpg"
+          },
+          {
+              "src": "assets/projects/m/2/10.jpg"
+          }
+  
+        ]
+      }
+
+]

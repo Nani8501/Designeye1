@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax with Movement</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Parallax Image Section */
+        .parallax {
+            background-image: url('4.jpg'); /* Add your image path here */
+            height: 700px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        /* Content Section */
+        .content {
+            padding: 100px 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+        }
+
+        .content h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Multiple Content Sections Above -->
+    <div class="content">
+        <h1>Moving Parallax Effect</h1>
+        <p>The background image moves as you scroll down.</p>
+        <p>Keep scrolling to see the parallax image moving!</p>
+    </div>
+    <div class="content">
+        <h1>Moving Parallax Effect</h1>
+        <p>The background image moves as you scroll down.</p>
+        <p>Keep scrolling to see the parallax image moving!</p>
+    </div>
+    <div class="content">
+        <h1>Moving Parallax Effect</h1>
+        <p>The background image moves as you scroll down.</p>
+        <p>Keep scrolling to see the parallax image moving!</p>
+    </div>
+    <div class="content">
+        <h1>Moving Parallax Effect</h1>
+        <p>The background image moves as you scroll down.</p>
+        <p>Keep scrolling to see the parallax image moving!</p>
+    </div>
+    <div class="content">
+        <h1>Moving Parallax Effect</h1>
+        <p>The background image moves as you scroll down.</p>
+        <p>Keep scrolling to see the parallax image moving!</p>
+    </div>
+    <div class="content">
+        <h1>Moving Parallax Effect</h1>
+        <p>The background image moves as you scroll down.</p>
+        <p>Keep scrolling to see the parallax image moving!</p>
+    </div>
+    <!-- Add more content sections as needed -->
+    
+    <!-- Parallax Section -->
+    <div class="parallax"></div>
+
+    <!-- More Content Sections Below -->
+    <div class="content">
+        <h1>Moving Parallax Effect</h1>
+        <p>The background image moves as you scroll down.</p>
+        <p>Keep scrolling to see the parallax image moving!</p>
+    </div>
+    <div class="content">
+        <h1>Moving Parallax Effect</h1>
+        <p>The background image moves as you scroll down.</p>
+        <p>Keep scrolling to see the parallax image moving!</p>
+    </div>
+
+    <script>
+        // JavaScript to add movement to the parallax image as you scroll
+        window.addEventListener('scroll', function() {
+            let parallax = document.querySelector('.parallax');
+            let scrollPosition = window.pageYOffset;
+            let parallaxOffset = parallax.offsetTop; // Get the position of the parallax section
+
+            // Check if the parallax section is in view
+            if (scrollPosition > parallaxOffset - window.innerHeight && scrollPosition < parallaxOffset + parallax.clientHeight) {
+                // Adjust the background position based on scroll relative to the element's offset
+                parallax.style.backgroundPositionY = (scrollPosition - parallaxOffset) * 0.5 + 'px';
+            }
+        });
+    </script>
+
+</body>
+</html>

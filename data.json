@@ -1,0 +1,46 @@
+[{
+    "project_name": "Dynamic Project2 Name",
+    "project_type": "RESIDENTIAL2",
+    "location": "ZAHEERABAD2",
+    "area": "6251",
+    "builtup_area": "2955",
+    "year": "2021",
+    "scope_of_work": "PLANNING, INTERIOR, LANDSCAPE",
+    "images": {
+      "home": "homeg.jpg",
+      "interior": "interiorg.jpeg",
+      "exterior": "exteriorh.jpeg",
+      "decoration": "decorationr.jpeg"
+    }
+},
+ {
+    "project_name": "Dynamic Project3 Name",
+    "project_type": "RESIDENTIAL3",
+    "location": "ZAHEERABAD4",
+    "area": "6251",
+    "builtup_area": "2955",
+    "year": "2021",
+    "scope_of_work": "PLANNING, INTERIOR, LANDSCAPE",
+    "images": {
+      "home": "homek.jpg",
+      "interior": "interiore.jpeg",
+      "exterior": "exteriorh.jpeg",
+      "decoration": "decorationw.jpeg"
+    }
+ },
+ {
+    "project_name": "Dynamic Project5 Name",
+    "project_type": "RESIDENTIAL4",
+    "location": "ZAHEERABAD2",
+    "area": "6251",
+    "builtup_area": "2955",
+    "year": "2021",
+    "scope_of_work": "PLANNING, INTERIOR, LANDSCAPE",
+    "images": {
+      "home": "homel.jpg",
+      "interior": "interior2.jpeg",
+      "exterior": "exteriore.jpeg",
+      "decoration": "decorationt.jpeg"
+    }
+  }
+]

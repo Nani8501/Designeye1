@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Details with Zoom and References</title>
+    <style>
+        /* Style for the gallery */
+.image1{
+    width: 150px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.image1 img:hover {
+    transform: scale(1.1);
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* Top section: Contains Left (Image) and Right (Details) */
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.left {
+    flex-basis: 50%;
+}
+
+.right {
+    display: flex;
+    flex-basis: 50%;
+    padding-left: 20px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+/* Zoomed image */
+.zoomed-image {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+}
+
+/* Bottom section: Reference images */
+.bottom-section {
+    margin-top: 10px;
+}
+
+.references {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.references img {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.references img:hover {
+    transform: scale(1.1);
+}
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #fefefe; /* White background */
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888; /* Gray border */
+    width: 80%; /* Could be more or less depending on screen size */
+    max-width: 1200px; /* Maximum width for larger screens */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+/* Close button */
+.close {
+    color: #aaa; /* Gray */
+    float: right; /* Right align */
+    font-size: 28px; /* Font size */
+    font-weight: bold; /* Bold font */
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* Change color on hover */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer; /* Pointer cursor */
+}
+
+/* Modal title */
+.modal-title {
+    font-size: 24px; /* Larger font size for title */
+    margin-bottom: 10px; /* Space below the title */
+    color: #333; /* Darker text color */
+}
+
+/* Modal description */
+.modal-description {
+    font-size: 16px; /* Standard font size */
+    color: #555; /* Medium gray for description text */
+}
+
+/* Unordered list styles */
+.modal-description ul {
+    padding-left: 20px; /* Indent list */
+    list-style-type: disc; /* Bulleted list */
+}
+
+.modal-description li {
+    margin: 5px 0; /* Space between list items */
+}
+
+/* Modal reference images */
+.modal-references img {
+    width: 150px; /* Thumbnail size */
+    height: auto; /* Maintain aspect ratio */
+    margin: 5px; /* Space around images */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 4px; /* Rounded corners for images */
+    transition: transform 0.2s; /* Animation for hover effect */
+}
+
+.modal-references img:hover {
+    transform: scale(1.1); /* Enlarge image on hover */
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="images-container"></div>
+
+
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="top-section">
+            <div class="left">
+                <img id="modal-image" class="zoomed-image" alt="Zoomed Image">
+            </div>
+            <div class="right">
+                <h2 id="modal-title"></h2>
+                <p id="modal-description"></p>
+            </div>
+        </div>
+        <div class="bottom-section">
+            <h3>Reference Photos:</h3>
+            <div id="modal-references" class="references"></div>
+        </div>
+    </div>
+</div>
+<script>
+    fetch('Architecture Projects copy.json')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok: ' + response.statusText);
+        }
+        return response.json();
+    })
+.then(data => {
+        console.log('Fetched Data:', data); // Log the fetched data
+        // Ensure data is defined and is an array
+        if (data && Array.isArray(data)) {
+            data.forEach(project => {
+                console.log(project.project_name); // Process each project
+                // Additional processing code here
+            });
+        } else {
+            console.error('Data is not in expected format: expected an array.', data);
+        }
+    })
+    .catch(error => {
+        console.error('Error fetching JSON data:', error);
+    });
+
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const modal = document.getElementById("modal");
+    const modalImage = document.getElementById("modal-image");
+    const modalTitle = document.getElementById("modal-title");
+    const modalDescription = document.getElementById("modal-description");
+    const modalReferences = document.getElementById("modal-references");
+    const closeModal = document.querySelector(".close");
+    let currentMainImageSrc = '';
+    console.log('Fetching from: Architecture Projects copy.json');
+
+    // Fetch JSON data
+    fetch('Architecture Projects copy.json')
+        .then(response => response.json())
+        .then(data => {
+            // Display the images on the page
+            const imagesContainer = document.getElementById("images-container");
+            data.forEach(project => {
+                project.images.forEach(image => {
+                    const img = document.createElement('img');
+                    img.src = image.src;
+                    img.alt = image.alt;
+                    img.classList.add('image1'); // Add your image class for styling
+                    imagesContainer.appendChild(img);
+
+                    // Add click event listener for each image
+                    img.addEventListener('click', function() {
+                        // Show modal
+                        modal.style.display = "block";
+
+                        // Set modal content
+                        currentMainImageSrc = img.getAttribute("src");
+                        const title = project.project_name;
+                        const description = `<ul>
+                            <li>Type: ${project.project_type}</li>
+                            <li>Location: ${project.location}</li>
+                            <li>Year: ${project.year}</li>
+                            <li>Scope of Work: ${project.scope_of_work}</li>
+                        </ul>`;
+                        const references = project.images.map(ref => ref.src);
+                        // Set the zoomed image
+                        modalImage.src = currentMainImageSrc;
+                        modalTitle.textContent = title;
+                        modalDescription.innerHTML = description;
+
+                        // Clear previous reference images
+                        modalReferences.innerHTML = '';
+
+                        // Add reference images
+                        references.forEach(ref => {
+                            const refImg = document.createElement('img');
+                            refImg.src = ref.trim();
+                            modalReferences.appendChild(refImg);
+
+                            // Add click event listener to swap reference image with the zoomed image
+                            refImg.addEventListener('click', function() {
+                                const tempSrc = modalImage.src;
+                                modalImage.src = refImg.src;
+                                refImg.src = tempSrc;
+                            });
+                        });
+                    });
+                });
+            });
+        })
+        .catch(error => console.error('Error fetching JSON data:', error));
+
+    // Close modal on 'x' click
+    closeModal.addEventListener('click', function() {
+        modal.style.display = "none";
+    });
+
+    // Close modal on outside click
+    window.addEventListener('click', function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    });
+});
+
+</script>
+</body>
+</html>

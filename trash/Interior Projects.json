@@ -1,0 +1,134 @@
+[
+    {
+        "id": 1,
+        "project_name":"HARIKRISHNA",
+        "project_type":"RESIDENTIAL",
+        "location": "KONDAPUR",
+        "area": "3086.43",
+        "builtup_area": "2209.3",
+        "year": "2018",
+        "scope_of_work": "PLANNING, INTERIORS.",
+        "images": {
+            "img1": "assets/projects/Interior Projects/KONDAPUR  HARIKRISHNA/1.jpg",
+            "img2": "assets/projects/Interior Projects/KONDAPUR  HARIKRISHNA/2.jpg",
+            "img3": "assets/projects/Interior Projects/KONDAPUR  HARIKRISHNA/3.jpg",
+            "img4": "assets/projects/Interior Projects/MY HOME ANKURA/4.jpg",
+            "img5": "",
+            "img6": ""
+        }
+    },
+    {
+        "id": 2,
+        "project_name":"MY HOME ANKURA",
+        "project_type":"RESIDENTIAL",
+        "location": "HYDERABAD",
+        "area": "",
+        "builtup_area": "",
+        "year": "2021",
+        "scope_of_work": "INTERIORS.",
+        "images": {
+            "img1": "assets/projects/Interior Projects/MY HOME ANKURA/1.jpg",
+            "img2": "assets/projects/Interior Projects/MY HOME ANKURA/2.jpg",
+            "img3": "assets/projects/Interior Projects/MY HOME ANKURA/3.jpg",
+            "img4": "assets/projects/Interior Projects/MY HOME ANKURA/4.jpg",
+            "img5": "",
+            "img6": ""
+        }
+
+    },
+    {
+        "id": 3,
+        "project_name":"NARASHIMHA REDDY",
+        "project_type":"RESIDENTIAL",
+        "location": "ZAHEERABAD",
+        "area": " 6251",
+        "builtup_area": "2955",
+        "year": "2021",
+        "scope_of_work": "PLANNING, INTERIOR, LANDSCAPE.",
+        "images": {
+            "img1": "assets/projects/Interior Projects/NARASHIMHA REDDY/1.jpg",
+            "img2": "assets/projects/Interior Projects/NARASHIMHA REDDY/2.jpg",
+            "img3": "assets/projects/Interior Projects/NARASHIMHA REDDY/3.jpg",
+            "img4": "assets/projects/Interior Projects/NARASHIMHA REDDY/4.jpg",
+            "img5": "assets/projects/Interior Projects/NARASHIMHA REDDY/5.jpg",
+            "img6": "assets/projects/Interior Projects/NARASHIMHA REDDY/6.jpg"
+        }
+
+    },
+    {
+        "id": 4,
+        "project_name":"APARNA CANOPY",
+        "project_type":"RESIDENTIAL",
+        "location": "KOMPALLY, HYDERABAD",
+        "area": "",
+        "builtup_area": "",
+        "year": "2021-2022",
+        "scope_of_work": "INTERIOR.",
+        "images": {
+            "img1": "assets/projects/Interior Projects/APARNA CANOPY/1.jpg",
+            "img2": "assets/projects/Interior Projects/APARNA CANOPY/2.jpg",
+            "img3": "assets/projects/Interior Projects/APARNA CANOPY/3.jpg",
+            "img4": "assets/projects/Interior Projects/APARNA CANOPY/4.jpg",
+            "img5": "assets/projects/Interior Projects/APARNA CANOPY/5.jpg",
+            "img6": ""
+        }
+
+    },
+    {
+        "id": 5,
+        "project_name":"GIRIDHAR RESIDENCE",
+        "project_type":"RESIDENTIAL",
+        "location": "ZAHEERABAD",
+        "area": "5893",
+        "builtup_area": "3328",
+        "year": "2022",
+        "scope_of_work": "PLANNING, INTERIOR, LANDSCAPE.",
+        "images": {
+            "img1": "assets/projects/Interior Projects/GIRIDHAR RESIDENCE/1.jpg",
+            "img2": "assets/projects/Interior Projects/GIRIDHAR RESIDENCE/2.jpg",
+            "img3": "assets/projects/Interior Projects/GIRIDHAR RESIDENCE/3.jpg",
+            "img4": "assets/projects/Interior Projects/MY HOME ANKURA/4.jpg",
+            "img5": "assets/projects/Interior Projects/GIRIDHAR RESIDENCE/3.jpg",
+            "img6": "assets/projects/Interior Projects/GIRIDHAR RESIDENCE/2.jpg"
+        }
+
+    },
+    {
+        "id": 6,
+        "project_name":"NAGESHWAR REDDY",
+        "project_type":"RESIDENTIAL",
+        "location": "VIZAG",
+        "area": "",
+        "builtup_area": "",
+        "year": "2022",
+        "scope_of_work": "INTERIOR.",
+        "images": {
+            "img1": "assets/projects/Interior Projects/NAGESHWAR REDDY/1.jpg",
+            "img2": "assets/projects/Interior Projects/NAGESHWAR REDDY/2.jpg",
+            "img3": "assets/projects/Interior Projects/NAGESHWAR REDDY/3.jpg",
+            "img4": "assets/projects/Interior Projects/NAGESHWAR REDDY/4.jpg",
+            "img5": "",
+            "img6": ""
+        }
+
+    },
+    {
+        "id": 7,
+        "project_name":"",
+        "project_type":"",
+        "location": "",
+        "area": "",
+        "builtup_area": "",
+        "year": "",
+        "scope_of_work": ".",
+        "images": {
+            "img1": "",
+            "img2": "",
+            "img3": "",
+            "img4": "",
+            "img5": "",
+            "img6": ""
+        }
+
+    }
+]

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Careers at our architectural company.">
+    <title>Architectural Company - Careers</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Milonga&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Milonga&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Milonga&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"></head>
+    <link href="/your-path-to-uicons/css/uicons-rounded-regular.css" rel="stylesheet">
+    <link href="/your-path-to-uicons/css/uicons-rounded-bold.css" rel="stylesheet">
+    <link href="/your-path-to-uicons/css/uicons-rounded-solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets1/css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c32adfdcda.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+section {
+  position: relative;
+  z-index: 3;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.container {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section-header {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.section-header h2 {
+  color: #000000;
+  font-weight: bold;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.section-header p {
+  color: #000000;
+}
+
+.row  {
+  display: flex;
+  flwx-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-info {
+  width: 50%;
+}
+
+.contact-info-item {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.contact-info-icon {
+  height: 70px;
+  width: 70px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.contact-info-icon i {
+  font-size: 30px;
+  line-height: 70px;
+}
+
+.contact-info-content {
+  margin-left: 20px;
+}
+
+.contact-info-content h4 {
+  color:#000000;
+  font-size: 1.4em;
+  margin-top: 20px;
+  font-weight: 600;
+  
+}
+
+.contact-info-content p {
+  color: #000000;
+  font-size: 1em;
+}
+
+.contact-form {
+  background-color: #fff;
+  padding: 40px;
+  width: 45%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-radius:20px;
+}
+
+.contact-form h2 {
+  font-weight: 500;
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-form .input-box {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contact-form .input-box input,
+.contact-form .input-box textarea{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.contact-form .input-box span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.contact-form .input-box input:focus ~ span,
+.contact-form .input-box textarea:focus ~ span{
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.contact-form .input-box input[type="submit"]
+{
+  width: 100%;
+  background:#fdcc66;
+  color: #FFF;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #fdcc66;
+  transition: 0.5s;
+}
+
+.contact-form .input-box input[type="submit"]:hover
+{
+  background: #FFF;
+  color: #fdcc66;
+}
+
+@media (max-width: 991px) {
+  section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .row {
+    flex-direction: column;
+  }
+  
+  .contact-info {
+    margin-bottom: 40px;
+    width: 100%;
+    padding-left: 20%;
+    font-size: 15px;
+    }
+  }
+  
+  .contact-form {
+    width: 50%;
+  }
+    </style>
+    <style>
+      .row{
+        font-family: "Lato", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 17px !important;
+      }
+                .copyright{
+            margin-top: 0px;
+            font-size: 10px;
+        }
+        .copyright a{
+            color: rgb(150, 150, 150);
+        }
+        .footer-07{
+            margin-top: 150em;
+            position: absolute;
+            width: 100%;
+            height: 250px;
+            z-index:5000;
+        }
+        .copyright{
+            margin-top: -40px;
+        }
+        .footer-heading{
+            margin-top: -75px;
+        }
+        .about{
+            margin-top: 55rem;
+            height: 95rem;
+            z-index: 0;
+        }
+        .google-map {
+            padding-bottom: 50%;
+            position: relative;
+        }
+
+        .google-map iframe {
+            height: 65%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            position: absolute;
+        }
+        .foot{
+            display: flex;
+            justify-content: space-around;
+            padding: 10;
+        }
+        .rightfoot{
+            display: flex;
+            flex-direction: column;
+            align-content:stretch;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            margin-top: -100px;
+        }
+        .about-right{
+            color: black;
+        }
+        .inner{
+                padding-left:15px;
+            }
+        @media screen and (max-width:450px) {
+            .footer-07{
+                margin-top: 80rem;
+                width: 100%;
+            }
+            .footer-07 img{
+                width: 75%;
+            }
+            .about-left p{
+                font-size: 20px !important;
+            }
+            .about-right2{
+                display: flex;
+                flex-direction: column;
+            }
+            .about-right2 {
+                  white-space: pre;
+            }
+            .about-right1 , .about-right2 {
+                margin: 0px;
+                text-align: center;
+                align-items: center;
+            }
+            .about-right1 h3, .about-right2 h3{
+                font-size: 15px;
+            }
+            .ftco-footer-social img{
+                width: 65%;
+            }
+            .footer-heading{
+                margin-top: -55px;
+            }
+            .about{
+                height: 100rem;
+            }
+            .footer-07 p{
+                font-size: 10px;
+            }
+            .footer-07 a{
+                font-size: 10px;
+            }
+            .mt-5{
+                margin-top: -50px;
+            }
+            .about{
+                height: 50rem;
+                width: 90%;
+            }
+            .google-map iframe {
+                height: 100%;
+                width: 100%;
+                left: 0;
+                top: 0;
+                position: absolute;
+            }
+            .inner{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .row {
+              font-family: "Lato", system-ui;
+              font-weight: 400;
+              font-style: normal;
+              font-size: 10px !important;
+          }
+          .contact-form {
+              background-color: #fff;
+              padding: 40px;
+              width: 45%;
+              padding-bottom: 20px;
+              padding-top: 20px;
+              border-radius:20px;
+              margin:-20px;
+              width:350px;
+            }
+            .contact-info-content {
+                margin-left: -5px;
+            }
+              .contact-info {
+                  margin-bottom: 40px;
+                  width: 100%;
+                  padding-left: 20%;
+                  
+                }
+        .contact-info h4{
+            font-size: 12px;
+          }
+        }
+        @media screen and (max-width:820px) {
+            .footer-07{
+                margin-top: 110rem;
+            }
+        .about{
+            height: 50rem;
+            margin-top: 70rem;
+        }
+        }
+        @media screen and (max-width:1024px) {
+            .footer-07{
+                margin-top: 160rem;
+            }
+            .about{
+                height: 50rem;
+                margin-top: 70rem;
+            }
+            .inner img{
+                margin: 0 0px 0 0px;
+                align-items:self-start  !important;
+            }
+
+        }
+        @media screen and (max-width:344px) {
+            .footer-07{
+                margin-top:105rem !important;
+                width: 110%;
+            }
+            .about{
+                height: 30rem !important;
+                margin-top: 70rem;
+            }
+            .inner{
+                display: flex;
+                flex-direction: column !important;
+                align-items: center;
+                justify-content: center;
+            }
+            .contact-form {
+              background-color: #fff;
+              padding: 40px;
+              width: 45%;
+              padding-bottom: 20px;
+              padding-top: 20px;
+              border-radius:20px;
+              margin:-20px;
+              width:300px;
+            }
+        }
+        @media screen and (max-width:375px) {
+          .contact-form {
+              background-color: #fff;
+              padding: 40px;
+              width: 45%;
+              padding-bottom: 20px;
+              padding-top: 20px;
+              border-radius:20px;
+              margin:-20px;
+              width:300px;
+            }
+        }
+
+        @media screen and (max-width:1024px) {
+            .footer-07{
+                margin-top: 160rem;
+            }
+            .about{
+                height: 90rem;
+                margin-top: 70rem;
+            }
+            .inner{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+        @media screen and (max-width:853px) {
+            .footer-07{
+                margin-top: 160rem;
+            }
+            .about{
+                height: 90rem;
+                margin-top: 75rem;
+            }
+        }
+        .contact-info-item1{
+          display: flex;
+          flex-direction: row;
+          width: 50%;
+          align-items: center;
+          justify-content: space-evenly;
+          padding-left: 20px;
+          margin-left: 20px;
+        }
+        @media screen and (max-width:650px){
+          .contact-info{
+            padding-left:10%;
+          }
+          .contact-info-content h4{
+              font-size: 15px ;
+          }
+          .contact-form{
+            padding:10px;
+            width: 90%;
+          }
+      }
+      @media screen and (max-width:450px){
+        .contact-info-content h4{
+            font-size: 15px ;
+        }
+        div.history-wrapper h1, h4 {
+           margin: 0 0px 0 10px; 
+      }
+      .contact-info-item1 {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-left: 50px;
+        margin-left: 20px;
+      }
+    }
+    </style>
+<body>
+  <div class="circle">
+    <div class="text9" id="image-text">
+        <p>Reach Us | Reach Us | Reach Us | </p>
+    </div>
+    <div class="whatsapp-button">
+        <a href="https://api.whatsapp.com/send?phone=+91-8125343636&text=Hello!%20I%20would%20like%20to%20get%20more%20information." target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        </a>
+    </div>
+</div>
+
+    <video class="bgvideo" autoplay muted>
+        <source src="bgvedio.mp4" type="video/mp4">
+    </video>
+    <div class="Header1">
+        <div class="left1">
+            <a href="index.html"><img src="updated-logo-300x76.png"  alt="Logo"></a>       
+        </div>
+        <div class="mid1">
+        </div>
+        <div class="dummy"></div>
+    </div>
+    <div class="demo">
+        <div class="menu-icon">
+            <input class="menu-icon__cheeckbox" type="checkbox" id="nav_button" />
+            <div class="menu1">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <div id="disappear-on-scroll" class="disappear-on-scroll"></div>
+    <div class="nav1" id="nav1">
+        <div class="mid12">
+            <a href="index.html"><img src="updated-logo-300x76.png"  alt="Logo"></a>       
+        </div>
+        <div class="head-innerdiv">
+            <a href="index.html"><p>Home</p></a>
+            <a href="aboutus.html"><p>About us</p></a>
+            <a href="projects.html"><p>Projects</p></a>
+            <a href="services.html"><p>Services</p></a>
+            <a href="carrers.html"><p>Careers</p></a>
+            <a href="contactus.html"><p>Contact Us</p></a>
+        </div>
+        <div class="social">
+            <div class="follo"><p>FOLLOW US</p></div>
+            <a href="https://www.instagram.com/designeyearchitects/"><img src="instagram.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/company/design-eye-architects?originalSubdomain=in"><img src="linkedin.png" alt="LinkedIn"></a>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="para">Contact Us</div>
+    </div>
+
+    <section class="about">
+        <div class="about-left" data-aos="fade-right" ><p>Contact Us</p></div>
+
+    
+            <div class="section-header">
+            </div>
+            
+            <div class="container">
+              <div class="row">
+                
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        </div>
+                        
+                        <div class="contact-info-content">
+                         <h4><a href="mailto:info@designeyestudios.in" style="color: black;"> info@designeyestudio.in</a></h4>
+                        </div>
+                      </div>
+                  <div class="contact-info-item">
+                    <div class="contact-info-icon">
+                      <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    </div>
+                    
+                    <div class="contact-info-content">
+                      <h4><a href="https://wa.me/+918125343636" style="color: black;"> +91-8125343636</a></h4>
+                    </div>
+                  </div>
+                  
+                  <div class="contact-info-item">
+                    <div class="contact-info-icon">
+                      <i class="fas fa-phone"></i>
+                    </div>
+                    
+                    <div class="contact-info-content">
+                      <h4><a href="tel:+918297434434 " style="color: black;"> <i class="fi fi-brands-whatsapp"></i>+91-8297434434</a></h4>
+                    </div>
+                  </div>
+                  <div class="contact-info-item1" >
+                    <div class="contact-info-icon">
+                      <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="contact-info-icon">
+                      <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </div>
+                    
+                  </div>
+                  
+
+                </div>
+                
+                <div class="contact-form">
+                  <form action="" id="contact-form">
+                    <h2>Send Message</h2>
+                    <div class="input-box">
+                      <input type="text" required="true" name="">
+                      <span>Full Name</span>
+                    </div>
+                    
+                    <div class="input-box">
+                      <input type="email" required="true" name="">
+                      <span>Email</span>
+                    </div>
+                    
+                    <div class="input-box">
+                      <textarea required="true" name=""></textarea>
+                      <span>Type your Message...</span>
+                    </div>
+                    
+                    <div class="input-box">
+                      <input type="submit" value="Send" name="">
+                    </div>
+                  </form>
+                </div>
+                
+              </div>
+            </div>
+<br><br><br><br><br>          
+
+        <!-- Your about section content here -->
+        <div class="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.289717408721!2d78.3848684759113!3d17.445842101117115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9134e714d76b%3A0x6cd39dbb53ab9ac8!2sDesign%20Eye%20Architects!5e0!3m2!1sen!2sin!4v1721139131652!5m2!1sen!2sin" width="600" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>       </div>
+    </section>
+
+    <!-- Job Openings Section -->
+
+    <!-- Footer Section -->
+    <footer class="footer-07">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-center">
+                    <div class="foot">
+                        <div class="leftfoot">
+                            <h2 class="footer-heading"><a href="#" class="logo">
+                                <a href="index.html"><img src="updated-logo-300x76.png"  alt="Logo"></a>       
+                            </h2>
+                            <ul class="ftco-footer-social p-0">
+                                <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="ion-logo-twitter"></span></a></li>
+                                <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="ion-logo-facebook"></span></a></li>
+                                <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="ion-logo-instagram"></span></a></li>
+                            </ul>
+                        </div>
+                        <div class="rightfoot">
+                                <h4 style="color: azure;">Quick Links</h4>
+                                <a href="index.html">Home</a>
+                                <a href="aboutus.html">About Us</a>
+                                <a href="projects.html">Projects</a>
+                                <a href="services.html">Services</a>
+                                <a href="carrers.html">Careers</a>
+                                <a href="contactus.html">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12 text-center">
+                    <p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> Design Eye Studio All rights reserved and Developed by <a href="http://www.vmedianadvertising.com/">V Media and Advertising</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Load JavaScript -->
+    <script src="jobs.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

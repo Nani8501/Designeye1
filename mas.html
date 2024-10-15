@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects of Design Eye Studio">
+    <title>Design Eye Architects-Projects</title>
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#8a8a8a">
+    <meta name="apple-mobile-web-app-title" content="Design Eye Architects">
+    <meta name="application-name" content="Design Eye Architects">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,100;1,100&family=Exo+2:ital,wght@0,100;1,100&family=Milonga&family=Teachers:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="projets.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets1/css/style.css">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        /* Flex container */
+        #images-container {
+            display: flex;
+            flex-wrap: wrap; /* Allows wrapping of items */
+            justify-content: space-between; /* Spacing between items */
+        }
+        
+        /* Image container */
+        .image-container {
+            aspect-ratio: 16 / 9;
+            position: relative;
+            width: 30%;
+            overflow: hidden; /* Ensures hover content stays within bounds */
+        }
+        
+        /* Image styling */
+        .image1 {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: filter 0.3s ease; /* Smooth transition for blur */
+        }
+        
+        /* Title styling */
+        .project-title {
+            position: absolute;
+            top: 50%; /* Center the title vertically */
+            left: 50%; /* Center the title horizontally */
+            transform: translate(-50%, -50%); /* Adjust centering */
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 10%;
+            font-size: 15px;
+            font-weight: 600;
+            width: 70%;
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.3s ease; /* Smooth transition for opacity */
+            z-index: 2; /* Ensure the title is above the image */
+        }
+        
+        /* Hover effect */
+        .image1:hover {
+            background: rgba(255, 255, 255, 0.776);
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 2px );
+            -webkit-backdrop-filter: blur( 4px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+        }
+        .image1:hover img{
+            border-radius: 20px;
+        }
+        
+        .image-container:hover .project-title{
+            background: rgba( 255, 255, 255, 0.3 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 2px );
+            -webkit-backdrop-filter: blur( 2px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            opacity: 1; /* Fade in the title on hover */
+        }
+        
+        
+        
+        </style>
+    <style>
+        .copyright{
+    margin-top: 0px;
+    font-size: 10px;
+}
+.copyright a{
+    color: rgb(150, 150, 150);
+}
+.about{
+    margin-top: 50rem;
+    height: 25rem;
+    padding:50px;
+}
+.about p{
+    font-family: "Lato", system-ui  !important;
+    font-weight: 400;
+    font-style: normal;
+}
+.footer-07{
+    margin-top: 75rem;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+}
+.copyright{
+    margin-top: -60px;
+}
+.footer-heading{
+    margin-top: -75px;
+}
+
+
+.job13{
+    background-color: rgba(255, 255, 255, 0) !important;
+
+}
+@media screen and (max-width: 420px) {
+
+    .job13{
+    background-color: rgba(255, 255, 255, 0) !important;
+
+}
+
+}
+
+.job-h{
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px 10px 0px 50px;
+}
+
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+.foot{
+    display: flex;
+    justify-content: space-around;
+    padding: 10;
+}
+.rightfoot{
+    display: flex;
+    flex-direction: column;
+    align-content:stretch;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: -100px;
+}
+/* Details */
+.details {
+    color: #ccc;
+    text-align: center;
+    padding: 10px;
+}
+.foot{
+    display: flex;
+    justify-content: space-around;
+    padding: 10;
+}
+.rightfoot{
+    display: flex;
+    flex-direction: column;
+    align-content:stretch;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: -100px;
+}
+footer{
+    margin-top: 108rem;
+    position: absolute;
+    width: 100%;
+}
+@media screen and (max-width:450px) {
+    .footer-07 img{
+        width: 75%;
+    }
+    .ftco-footer-social img{
+        width: 65%;
+    }
+    .copyright {
+        margin-top: -20px;
+    }
+    .job13{
+    background-color: rgba(255, 255, 255, 0) !important;
+
+}
+span {
+        background-color: #ffffff00;
+    }
+}
+@media screen and (max-width:412px){
+    .job13{
+    background-color: rgba(255, 255, 255, 0) !important;
+
+}
+}
+</style>
+<style>
+    /* Style for the gallery */
+    
+    .image1 {
+        margin: 10px;
+        cursor: pointer;
+        transition: transform 0.3s;
+        aspect-ratio: 16 / 9;
+    }
+    .image1:hover {
+        transform: scale(1.1);
+    }
+    /* Modal styles */
+
+
+    .top-section {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .left {
+        flex-basis: 50%;
+    }
+
+    .right {
+        display: flex;
+        flex-basis: 50%;
+        padding-left: 20px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .zoomed-image {
+        width: 100%;
+        height: auto;
+        border: 2px solid #ccc;
+    }
+
+    .bottom-section {
+        margin-top: 10px;
+    }
+
+    .references {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .references img {
+        width: 150px;
+        height: auto;
+        cursor: pointer;
+        transition: transform 0.3s;
+    }
+
+    .references img:hover {
+        transform: scale(1.1);
+    }
+
+    .modal {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 1200px;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .modal-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .modal-description {
+        font-size: 16px;
+        color: #555;
+    }
+
+    .modal-description ul {
+        padding-left: 20px;
+        list-style-type: disc;
+    }
+
+    .modal-description li {
+        margin: 5px 0;
+    }
+    #images-container{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-evenly;
+            align-items: center;
+    }
+    .modal-references img {
+        width: 50px;
+        height: auto;
+        margin:0px;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: transform 0.2s;
+    }
+
+    .modal-references img:hover {
+        transform: scale(1.1);
+    }
+    .top-section {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        flex-direction: row;
+    }
+    .image1 {
+
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+    .det  {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
+}
+.hea{
+    font-size: 21px;
+    font-weight: 500;
+}
+#model-title{
+    font-size: 25px;
+    font-weight: 500;
+}
+    @media screen and (max-width:1660px) {
+        .image1 {
+
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        
+    }
+    @media screen and (max-width:1520px) {
+        .footer-07{
+            margin-top: 70rem;
+        }
+        .about{
+            height: 30rem;
+        }
+    }
+    @media screen and (max-width:1420px) {
+        .image1 {
+
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .right h2 {
+        font-size: 25px;
+        }
+        .right p {
+        font-size: 20px;
+        }
+        .footer-07{
+    margin-top: 70rem;
+
+        }
+        .about{
+            height: 35rem;
+        }
+    }
+    @media screen and (max-width:1320px) {
+        .footer-07{
+    margin-top: 70rem;
+
+        }
+        .about{
+            height: 30rem;
+        }
+    }
+    @media screen and (max-width:1220px) {
+        .right p {
+        font-size: 18px;
+        }
+        .footer-07{
+            margin-top: 70rem;
+
+        }
+        .about{
+            height: 30rem;
+        }
+    }
+    @media screen and (max-width:1120px) {
+        .footer-07{
+            margin-top: 65rem;
+        }
+        .about{
+            height: 30rem;
+        }
+    }
+    @media screen and (max-width:1020px) {
+        .image1 {
+
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .right h2 {
+        font-size: 20px;
+        }
+        .right p {
+        font-size: 15px;
+        }
+        .footer-07{
+            margin-top: 65rem;
+        }
+        .about{
+            height: 30rem;
+        }
+        .hea{
+            font-size: 17px;
+        }
+        .det{
+            font-size: 17px;
+
+        }
+        .image-container {
+            position: relative;
+            width: 40%;
+        }
+    }
+    @media screen and (max-width:920px) {
+        .footer-07{
+            margin-top: 65rem;
+
+        }
+        .about{
+            height: 30rem;
+        }
+    }
+    @media screen and (max-width:820px) {
+        .footer-07{
+            margin-top: 62rem;
+
+        }
+        .right h2 {
+            font-size: 17px;
+        }
+        .hea{
+            font-size: 14px;
+        }
+        .det{
+            font-size: 14px;
+
+        }
+        .about{
+            height: 30rem;
+        }
+        .right h2 {
+        font-size: 18px;
+        }
+        .right p {
+        font-size: 14px;
+        }
+
+    }
+    @media screen and (max-width:720px) {
+        .top-section{
+            flex-direction: column;
+        }
+
+        .right h2 {
+        font-size: 15px;
+        }
+
+        .image1 {
+            height: 100%;
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .right p {
+        font-size: 12px;
+        }
+        .footer-07{
+            margin-top: 63rem;
+
+        }
+        .about{
+            height: 30rem;
+        }
+    }
+    @media screen and (max-width:650px) {
+        .footer-07{
+            margin-top: 60rem;
+
+        }
+        .about{
+            height:25rem;
+        }
+    }
+    @media screen and (max-width:600px) {
+        .top-section{
+            flex-direction: column;
+        }
+        .image1{
+            height: 100%;
+            width: 100%;
+        }
+        .footer-07{
+            margin-top: 60rem;
+        }
+        .about{
+            height: 25rem;
+        }
+        .right h2 {
+        font-size: 15px;
+        }
+        .right p {
+        font-size: 12px;
+        }
+    }
+    @media screen and (max-width:500px) {
+        .footer-07{
+            margin-top: 75rem;
+        }
+        .about{
+            height: 25rem;
+        }
+        .image-container {
+            position: relative;
+            width: 90%;
+        }
+        .hero {
+            bottom: 50%;
+        }
+        .project-title {
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 5%;
+            font-size: 15px;
+            font-weight: 600;
+            width: 80%;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 2;
+        }
+    }
+    @media screen and (max-width:430px) {
+
+        .about{
+            height: 25rem;
+        }
+        .image1{
+            width: 95% !important;
+        }
+        .right p {
+        font-size: 12px;
+        }
+        .footer-07{
+            margin-top: 75rem;
+        }
+
+    }
+    @media screen and (max-width:400px) {
+        .footer-07{
+            margin-top: 75rem;
+        }
+        .about{
+            height: 25rem;
+        }
+    }
+    @media screen and (max-width:370px) {
+        .top-section{
+            flex-direction: column;
+        }
+        .about{
+            padding: 10px;
+            width:90%;
+            height: 25rem;
+        }
+        .image1{
+            width: 95% !important;
+        }
+        .modal-description ul {
+        font-size: 10px;
+        }
+        .footer-07{
+            margin-top: 75rem;
+        }
+    }
+    @media screen and (max-width:320px) {
+        .top-section{
+            flex-direction: column;
+        }
+        .about{
+            padding: 10px;
+            width:90%;
+            height: 20rem;
+        }
+        .image1{
+            width: 95% !important;
+        }
+        .modal-description ul {
+        font-size: 10px;
+        }
+        .footer-07{
+            margin-top: 70rem;
+        }
+    }
+    div.history-wrapper h1, p, img, h4 {
+        margin: 0 0px 0 0px;
+    }
+</style>
+<style>
+
+
+    .circle {
+        bottom: 20px;
+        --width: 80px;
+        --height: 80px;
+        position: fixed;
+        right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: var(--width);
+        height: var(--height);
+        border-radius: 50%;
+        z-index: 99;
+    }
+
+    .text9 {
+        position: absolute;
+        color: white;
+        width: 100%;
+        height: 100%;
+        animation: rotateText 10s linear infinite;
+    }
+
+    .text9 .char {
+        position: absolute;
+        left:50%;
+        font-size: 10px;
+        transform-origin: 0 calc(var(--height) / 2);
+    }
+
+    @media (min-width: 500px) {
+        .text9 .char {
+            font-size: 10px;
+        }
+    }
+
+    @keyframes rotateText {
+        0% {
+            transform: rotate(360deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+    .whatsapp-button {
+        position: absolute;
+
+        z-index: 1000;
+    }
+
+    .whatsapp-button img {
+        display: flex;
+        width: 50px;
+        /* Adjusted size for WhatsApp logo */
+        height: 50px;
+
+        /* Adjusted size for WhatsApp logo */
+        border-radius: 50%;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+    }
+
+
+    .whatsapp-button img:hover {
+        transform: scale(1.1);
+    }
+</style>
+</head>
+<body>
+
+    <div class="circle">
+        <div class="text9" id="image-text">
+            <p>Reach Us | Reach Us | Reach Us | </p>
+        </div>
+        <div class="whatsapp-button">
+            <a href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER&text=Hello!%20I%20would%20like%20to%20get%20more%20information." target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+            </a>
+        </div>
+    </div>
+    
+    <video class="bgvideo" autoplay muted>
+        <source src="bgvedio.mp4" type="video/mp4">
+    </video>
+    <div class="Header1">
+        <div class="left1">
+            <a href="index.html"><img src="updated-logo-300x76.png"  alt="Logo"></a>
+        </div>
+        <div class="mid1">
+        </div>
+        <div class="dummy"></div>
+    </div>
+    <div class="demo">
+        <div class="menu-icon">
+            <input class="menu-icon__cheeckbox" type="checkbox" id="nav_button" />
+            <div class="menu1">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+
+    </div>
+    
+    <div id="disappear-on-scroll" class="disappear-on-scroll"></div>
+    <div class="nav1" id="nav1">
+            <a href="index.html"><img src="updated-logo-300x76.png"  alt="Logo"></a>      
+        <div class="head-innerdiv">
+            <a href="index.html"><p>Home</p></a>
+            <a href="aboutus.html"><p>About</p></a>
+            <a href="projects.html"><p>Projects</p></a>
+            <a href="services.html"><p>Services</p></a>
+            <a href="carrers.html"><p>Careers</p></a>
+            <a href="contactus.html"><p>Contact Us</p></a>
+        </div>
+        <div class="social">
+            <div class="follo"><p>FOLLOW US</p></div>
+            <a href="https://www.instagram.com/designeyearchitects/"><img src="instagram.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/company/design-eye-architects?originalSubdomain=in"><img src="linkedin.png" alt="LinkedIn"></a>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="para">Projects of<br>Design EYE Studio</div>
+    </div>
+
+    <section class="about">
+        <div class="job123">
+            <div class="job12">
+                <div id="images-container"></div>
+
+                <!-- Popup for project details -->
+            </div>
+        </div>
+    </section>
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="top-section">
+                <div class="left">
+                    <img id="modal-image" class="zoomed-image" alt="Zoomed Image">
+                </div>
+                <div class="right">
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-description"></p>
+                </div>
+            </div>
+            <div class="bottom-section">
+                <h3>Reference Photos:</h3>
+                <div id="modal-references" class="references"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer Section -->
+    <!-- Footer Section -->
+    <footer class="footer-07">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-center">
+                    <div class="foot">
+                        <div class="leftfoot">
+                            <h2 class="footer-heading"><a href="#" class="logo">
+                                <a href="index.html"><img src="updated-logo-300x76.png"  alt="Logo"></a>       
+                                <ul class="ftco-footer-social p-0">
+                                <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="ion-logo-twitter"></span></a></li>
+                                <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="ion-logo-facebook"></span></a></li>
+                                <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="ion-logo-instagram"></span></a></li>
+                            </ul>
+                        </div>
+                        <div class="rightfoot">
+                                <h4 style="color: azure;">Quick Links</h4>
+                                <a href="index.html">Home</a>
+                                <a href="aboutus.html">About</a>
+                                <a href="projects.html">Projects</a>
+                                <a href="services.html">Services</a>
+                                <a href="carrers.html">Careers</a>
+                                <a href="contactus.html">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12 text-center">
+                    <p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> Design Eye Studio All rights reserved and Developed by <a href="http://www.vmedianadvertising.com/">V Media and Advertising</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const modal = document.getElementById("modal");
+            const modalImage = document.getElementById("modal-image");
+            const modalTitle = document.getElementById("modal-title");
+            const modalDescription = document.getElementById("modal-description");
+            const modalReferences = document.getElementById("modal-references");
+            const closeModal = document.querySelector(".close");
+            let currentMainImageSrc = '';
+
+            
+                fetch('Masterplan.json')
+                .then(response => response.json())
+                .then(data => {
+                    const imagesContainer = document.getElementById("images-container");
+                    data.forEach(project => {
+                        if (project.images.length > 0) {
+                            const firstImage = project.images[0];
+            
+                            // Create the container div
+                            const imageContainer = document.createElement('div');
+                            imageContainer.classList.add('image-container');
+            
+                            // Create the image element
+                            const img = document.createElement('img');
+                            img.classList.add('image1');
+                            img.src = firstImage.src;
+                            img.alt = project.project_name;
+            
+                            // Create the title element
+                            const projectTitle = document.createElement('div');
+                            projectTitle.classList.add('project-title');
+                            projectTitle.textContent = project.project_name;
+            
+                            // Append image and title to the container
+                            imageContainer.appendChild(img);
+                            imageContainer.appendChild(projectTitle);
+            
+                            // Append the container to the images container
+                            imagesContainer.appendChild(imageContainer);
+            
+                            // Add modal event handling
+                            img.addEventListener('click', function() {
+                                // Open modal logic
+                                modal.style.display = "block";
+                                currentMainImageSrc = img.src;
+                                modalImage.src = currentMainImageSrc;
+                                modalTitle.textContent = project.project_name;
+                                modalDescription.innerHTML = `
+                                    <ul>
+                                        <li><span class="hea">Type:</span> ${project.project_type}</li>
+                                        <li><span class="hea">Location:</span> ${project.location}</li>
+                                        <li><span class="hea">Year:</span> ${project.year}</li>
+                                        <li><span class="hea">Scope of Work:</span> ${project.scope_of_work}</li>
+                                        <li><span class="hea">Land Area Area:</span> ${project.land_area}</li>
+                                    </ul>
+                                `;
+            
+                                // Load reference images from `project.images`
+                                const references = project.images.map(ref => ref.src);
+            
+                                // Clear and add reference images
+                                modalReferences.innerHTML = '';
+                                references.forEach(ref => {
+                                    const refImg = document.createElement('img');
+                                    refImg.src = ref.trim();
+                                    refImg.classList.add('reference-image');
+                                    modalReferences.appendChild(refImg);
+            
+                                    // Click event for swapping the reference image with the main image
+                                    refImg.addEventListener('click', function() {
+                                        const tempSrc = modalImage.src;
+                                        modalImage.src = refImg.src;
+                                        refImg.src = tempSrc;
+                                    });
+                                });
+                            });
+                        }
+                    });
+                })
+                .catch(error => console.error('Error fetching JSON data:', error));
+            
+                closeModal.addEventListener('click', function() {
+                    modal.style.display = "none";
+                });
+            
+                window.addEventListener('click', function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                });
+            });
+            
+        
+    </script>
+    <script>
+        const text = document.getElementById("image-text9");
+        text.innerHTML = text.innerText
+            .split("")
+            .map(
+                (char, i) =>
+                    `<span class="char" style="transform: rotate(${i * 10.5}deg);">${char}</span>`
+            )
+            .join("");
+    </script>
+
+</body>
+</html>

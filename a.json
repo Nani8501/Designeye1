@@ -1,0 +1,398 @@
+[
+    {
+      "id": 1,
+      "project_name": "A Luxury Home Pulivendula",
+      "project_type": "Residential",
+      "location": "Pulivendula",
+      "year": "2023",
+      "scope_of_work": "Architecture, Interior Design, and Project Coordination",
+      "land_area":"4210 sq ft",
+      "buildup_area":"8200 sq ft",
+      "budget":"4 Cr",
+      "images": [
+        {
+          "src": "assets/projects/a/1/1.jpg"
+        },
+        {
+            "src": "assets/projects/a/1/2.jpg"
+        }
+      ]
+    },
+    {
+        "id": 2,
+        "project_name": "The Elegant Retreat",
+        "project_type": "Residential",
+        "location": "Kompalli",
+        "year": "2023",
+        "scope_of_work": "Architecture, Renovation, Interior Design, and Project Management Consulting",
+        "land_area":"4180 sq ft",
+        "buildup_area":"4125 sq ft",
+        "budget":"1.5 Cr",
+        "images": [
+          {
+            "src": "assets/projects/a/2/1.png"
+          },
+          {
+              "src": "assets/projects/a/2/2.png"
+          },
+          {
+            "src": "assets/projects/a/2/3.png"
+          },
+          {
+              "src": "assets/projects/a/2/4.png"
+          }
+        ]
+
+      },
+      {
+        "id": 4,
+        "project_name": "Harvest Heaven",
+        "project_type": "Residential",
+        "location": "Manoharabad",
+        "year": "2024",
+        "scope_of_work": "Architecture, Project Coordination, and Landscape Design",
+        "land_area":"1.15 acre",
+        "buildup_area":"6100 sq ft",
+        "budget":"2.1 Cr",
+        "images": [
+          {
+            "src": "assets/projects/a/4/1.jpg"
+          },
+          {
+              "src": "assets/projects/a/4/2.jpg"
+          },
+          {
+            "src": "assets/projects/a/4/3.jpg"
+          },
+          {
+            "src": "assets/projects/a/4/4.jpg"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "project_name": "Garuda Resorts",
+        "project_type": "Residential",
+        "location": "kanukunta",
+        "year": "2024",
+        "scope_of_work": "Architecture, Project Coordination, and Landscape Design",
+        "land_area":"1.18 acre",
+        "buildup_area":"20000 sq ft",
+        "budget":"7 Cr",
+        "images": [
+          {
+            "src": "assets/projects/a/5/9.jpg"
+          },
+          {
+              "src": "assets/projects/a/5/2.jpg"
+          },
+          {
+            "src": "assets/projects/a/5/3.jpg"
+          },
+          {
+            "src": "assets/projects/a/5/4.jpg"
+          },
+          {
+            "src": "assets/projects/a/5/5.jpg"
+          },
+          {
+              "src": "assets/projects/a/5/6.jpg"
+          },
+          {
+            "src": "assets/projects/a/5/7.jpg"
+          },
+          {
+            "src": "assets/projects/a/5/8.jpg"
+          },
+          {
+            "src": "assets/projects/a/5/1.jpg"
+          },
+          {
+              "src": "assets/projects/a/5/10.jpg"
+          },
+          {
+            "src": "assets/projects/a/5/11.jpg"
+          },
+          {
+            "src": "assets/projects/a/5/12.jpg"
+          }
+
+        ]
+      },
+      {
+        "id": 6,
+        "project_name": "Fields of Fortune",
+        "project_type": "Residential",
+        "location": "Ramalingampalli",
+        "year": "2024",
+        "scope_of_work": "Architecture, Project Coordination, and Landscape Design",
+        "land_area":"4 acre",
+        "buildup_area":"2850 sq ft",
+        "budget":"1 Cr",
+        "images": [
+          {
+            "src": "assets/projects/a/6/1.jpg"
+          },
+          {
+              "src": "assets/projects/a/6/2.jpg"
+          },
+          {
+            "src": "assets/projects/a/6/3.jpg"
+          },
+          {
+            "src": "assets/projects/a/6/4.jpg"
+          }
+        ]
+      },      
+      {
+        "id": 7,
+        "project_name": "Jaihind Enclave",
+        "project_type": "Commercial",
+        "location": "Madhapur",
+        "year": "2023",
+        "scope_of_work": "Architecture, Renovation, Interior Design, and Project Coordination",
+        "land_area":"8390 sq ft",
+        "buildup_area":"29750 sq ft",
+        "budget":"10 Cr",
+        "images": [
+          {
+            "src": "assets/projects/a/7/3.jpg"
+          },
+          {
+              "src": "assets/projects/a/7/2.jpg"
+          },
+          {
+            "src": "assets/projects/a/7/1.jpg"
+          },
+          {
+            "src": "assets/projects/a/7/4.jpg"
+          },
+          {
+            "src": "assets/projects/a/7/5.jpg"
+          }
+        ]
+      },      
+      {
+        "id": 8,
+        "project_name": "Fortune House",
+        "project_type": "Residential",
+        "location": "Pulivendula",
+        "year": "2022",
+        "scope_of_work": "Architecture, Interior Design, and Project Coordination",
+        "land_area":"3600 sq ft",
+        "buildup_area":"6060 sq ft",
+        "budget":"3 Cr",
+        "images": [
+          {
+            "src": "assets/projects/a/8/3.jpg"
+          },
+          {
+              "src": "assets/projects/a/8/2.jpg"
+          },
+          {
+            "src": "assets/projects/a/8/1.jpg"
+          },
+          {
+            "src": "assets/projects/a/8/4.png"
+          },
+          {
+            "src": "assets/projects/a/8/5.png"
+          },
+          {
+            "src": "assets/projects/a/8/6.png"
+          },
+          {
+              "src": "assets/projects/a/8/7.png"
+          },
+          {
+            "src": "assets/projects/a/8/8.png"
+          },
+          {
+            "src": "assets/projects/a/8/9.jpg"
+          },
+          {
+            "src": "assets/projects/a/8/10.jpg"
+          }
+          ,
+          {
+              "src": "assets/projects/a/8/11.jpg"
+          },
+          {
+            "src": "assets/projects/a/8/12.jpg"
+          },
+          {
+            "src": "assets/projects/a/8/13.jpg"
+          },
+          {
+            "src": "assets/projects/a/8/14.jpg"
+          },
+          {
+            "src": "assets/projects/a/8/15.jpg"
+          },
+          {
+            "src": "assets/projects/a/8/18.jpg"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "project_name": "Urban Orchid",
+        "project_type": "Residential",
+        "location": "Mayuri Nagar",
+        "year": "2024",
+        "scope_of_work": "Architecture, Interior Design, and Project Management Consulting",
+        "land_area":"2315 sq ft",
+        "buildup_area":"6000 sq ft",
+        "budget":"3 Cr",
+        "images": [
+          {
+            "src": "assets/projects/a/9/1.jpg"
+          },
+          {
+              "src": "assets/projects/a/9/2.jpg"
+          },
+          {
+            "src": "assets/projects/a/9/3.jpg"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "project_name": "Azure Bliss",
+        "project_type": "Residential",
+        "location": "Zaheerabad",
+        "year": "2022",
+        "scope_of_work": "Architecture, Interior Design, Project Coordination, and Landscape Design",
+        "land_area":"6250 sq ft",
+        "buildup_area":"8100 sq ft",
+        "budget":"4.25 Cr",
+        "images": [
+          {
+            "src": "assets/projects/a/10/1.jpg"
+          },
+          {
+              "src": "assets/projects/a/10/2.jpg"
+          },
+          {
+            "src": "assets/projects/a/10/3.jpg"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "project_name": "Urban Mist",
+        "project_type": "Residential",
+        "location": "Miyapur",
+        "year": "2024",
+        "scope_of_work": "Architecture, Interior Design, and Project Coordination",
+        "land_area":"2325 sq ft",
+        "buildup_area":"8050 sq ft",
+        "budget":"2.8 Cr",
+        "images": [
+          {
+            "src": "assets/projects/a/11/1.jpg"
+          },
+          {
+              "src": "assets/projects/a/11/2.jpg"
+          },
+          {
+            "src": "assets/projects/a/11/3.jpg"
+          },
+          {
+            "src": "assets/projects/a/11/3.jpg"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "project_name": "Havencrest",
+        "project_type": "Residential",
+        "location": "Zaheerabad",
+        "year": "2022",
+        "scope_of_work": "Architecture, Project Coordination, and Landscape Design",
+        "land_area":"6049 sq ft",
+        "buildup_area":"8030 sq ft",
+        "budget":"4.5 Cr",
+        "images": [
+          {
+            "src": "assets/projects/a/12/1.jpg"
+          },
+          {
+              "src": "assets/projects/a/12/2.jpg"
+          },
+          {
+            "src": "assets/projects/a/12/3.jpg"
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "project_name": "Twilight Haven",
+        "project_type": "Residential",
+        "location": "Jammalamadugu",
+        "year": "2023",
+        "scope_of_work": "Architecture, Interior Design, and Project Coordination",
+        "land_area":"13250 sq ft",
+        "buildup_area":"16780 sq ft",
+        "budget":"8.5 Cr",
+        "images": [
+          {
+            "src": "assets/projects/a/14/1.jpg"
+          },
+          {
+              "src": "assets/projects/a/14/2.jpg"
+          },
+          {
+            "src": "assets/projects/a/14/3.jpg"
+          },
+          {
+            "src": "assets/projects/a/14/4.jpg"
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "project_name": "Sunrise Ridge",
+        "project_type": "Residential",
+        "location": "Bengaluru",
+        "year": "2024",
+        "scope_of_work": "Architecture, Interior Design, and Project Coordination",
+        "land_area":"4800 sq ft",
+        "buildup_area":"11100 sq ft",
+        "budget":"5.5 Cr",
+        "images": [
+          {
+            "src": "assets/projects/a/15/1.jpg"
+          },
+          {
+              "src": "assets/projects/a/15/2.jpg"
+          },
+          {
+            "src": "assets/projects/a/15/3.jpg"
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "project_name": "Emerald Haven",
+        "project_type": "Residential",
+        "location": "Zaheerabad",
+        "year": "2024",
+        "scope_of_work": "Architecture and Project Coordination",
+        "land_area":"2330 sq ft",
+        "buildup_area":"3450 sq ft",
+        "budget":"1.22 Cr",
+        "images": [
+          {
+            "src": "assets/projects/a/16/1.jpg"
+          },
+          {
+              "src": "assets/projects/a/16/2.jpg"
+          },
+          {
+            "src": "assets/projects/a/16/3.jpg"
+          }
+        ]
+      }
+
+]

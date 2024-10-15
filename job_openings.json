@@ -1,0 +1,49 @@
+[
+    {
+        "title": "INTERN POSITION",
+        "description": "We are a 15-person architectural design firm with a pet-friendly, hip workshop vibe producing a wide range of project types for private, commercial and institutional clients.",
+        "location": "Hyderabad, India",
+        "requirements": [
+            "Draft existing site conditions in AutoCAD",
+            "Draft and develop design proposals",
+            "Prepare packages for Department of Buildings and Landmark’s Preservation Commission",
+            "Collaborate with project teams",
+            "Assist with various in-office tasks"
+        ]
+    },
+    {
+        "title": "JUNIOR ARCHITECT",
+        "description": "We are seeking an Architect with 2-5 years experience who is passionate about residential architecture and modern design to join our team.",
+        "location": "Hyderabad, India",
+        "requirements": [
+            "2-5 years professional experience",
+            "High level of proficiency with 3D modeling or BIM software- Revit  or Archicad",
+            "You are resourceful, have the ability to work efficiently on multiple projects and keep them organized",
+            "Strong conceptual, design and detailing skills"
+        ],
+        "benefits":"This is a full time salaried position with health insurance, paid vacation, sick leave and holidays. Salary starts at $65,000 and is commensurate with experience and skill set."
+    },
+    {
+        "title": "SENIOR ARCHITECT",
+        "description": "Design Eye Architects is seeking an experienced Architect with 10+ years post graduate experience in Hyderabad",
+        "location": "Hyderabad, India",
+        "requirements": [
+            "7-10 years of post graduate experience",
+            "Comprehensive understanding of the requirements of the ADA, and its application to the built environment",
+            "A flexible and open attitude towards various ways of working, and a commitment to excellence"
+        ],
+        "benefits":"This is a full time salaried position with health insurance, paid vacation, sick leave and holidays. Salary starts at $65,000 and is commensurate with experience and skill set."
+    },
+    {
+        "title": "Civil Engineer",
+        "description": "We are looking for a Graduate Engineer Trainee Fresher for the CIVIL Domain",
+        "location": "Hyderabad, India",
+        "requirements": [
+            "Adhere to established design guidelines and procedures.",
+            "Analyze design issues and recommend corrective actions.",
+            "Manage design projects within allotted timelines and budgets.",
+            "Perform design changes and improvements according to changing project demands."
+        ],
+        "benefits":"This is a full time salaried position with health insurance, paid vacation, sick leave and holidays. Salary starts at $65,000 and is commensurate with experience and skill set."
+    }
+]

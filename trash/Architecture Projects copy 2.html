@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Display</title>
+  <style>
+    #projectGrid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .project {
+      width: 200px;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    #projectDetails {
+      display: none;
+      position: fixed;
+      top: 50px;
+      left: 50px;
+      background-color: white;
+      padding: 20px;
+      border: 1px solid #ddd;
+      max-width: 600px;
+      z-index: 1000;
+    }
+
+    .button-container {
+      margin: 20px;
+      text-align: center;
+    }
+
+    .button-container button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Lander page with 4 buttons -->
+<div class="button-container">
+  <button onclick="filterProjects('Architecture')">Architecture</button>
+  <button onclick="filterProjects('Interiors')">Interiors</button>
+  <button onclick="filterProjects('Landscape')">Landscape</button>
+  <button onclick="filterProjects('Master Plan')">Master Plan</button>
+</div>
+
+<!-- Project Grid to display the filtered projects -->
+<div id="projectGrid"></div>
+
+<!-- Project details popup -->
+<div id="projectDetails">
+  <h2 id="projectTitle"></h2>
+  <img id="projectImage" />
+  <div id="projectInfo"></div>
+  <button onclick="closeDetails()">Close</button>
+</div>
+
+<script src="script.js"></script>
+<script>
+    // Function to render filtered projects dynamically
+// Function to render filtered projects dynamically
+function renderProjects(projects) {
+  const projectGrid = document.getElementById('projectGrid');
+
+  // Clear existing content
+  projectGrid.innerHTML = '';
+
+  // Loop through each project and create the necessary HTML structure
+  projects.forEach(project => {
+    const projectDiv = document.createElement('div');
+    projectDiv.classList.add('project');
+
+    // Create and append images for each project
+    project.images.forEach(image => {
+      const projectImg = document.createElement('img');
+      projectImg.src = image.src;
+      projectImg.alt = image.alt;
+      projectImg.style.maxWidth = "200px";
+      projectImg.style.margin = "10px";
+      projectImg.onclick = () => openDetails(project); // Set onclick to open details popup
+
+      // Append each image to the project div
+      projectDiv.appendChild(projectImg);
+    });
+
+    // Append the project div to the grid container
+    projectGrid.appendChild(projectDiv);
+  });
+}
+
+// Function to open project details in a popup
+function openDetails(project) {
+  const projectDetails = document.getElementById('projectDetails');
+  const projectTitle = document.getElementById('projectTitle');
+  const projectImage = document.getElementById('projectImage');
+  const projectInfo = document.getElementById('projectInfo');
+
+  // Set the project title and main image
+  projectTitle.textContent = `Project Details: ${project.project_name}`;
+  projectImage.src = project.images[0].src;
+  projectImage.alt = project.images[0].alt;
+
+  // Set the project info dynamically with headings
+  projectInfo.innerHTML = `
+    <h3>Type:</h3>
+    <p>${project.project_type}</p>
+    <h3>Location:</h3>
+    <p>${project.location}</p>
+    <h3>Year:</h3>
+    <p>${project.year}</p>
+    <h3>Scope of Work:</h3>
+    <p>${project.scope_of_work}</p>
+    <h3>Additional Images:</h3>
+  `;
+
+  // Append additional images in the project details popup
+  project.images.forEach(image => {
+    const img = document.createElement('img');
+    img.src = image.src;
+    img.alt = image.alt;
+    img.style.maxWidth = "200px";
+    img.style.margin = "10px";
+    projectInfo.appendChild(img);
+  });
+
+  // Show the popup
+  projectDetails.style.display = 'block';
+}
+
+// Function to close project details popup
+function closeDetails() {
+  document.getElementById('projectDetails').style.display = 'none';
+}
+
+// Function to fetch and filter projects based on type
+function filterProjects(type) {
+  // Log the type to ensure the button is triggering correctly
+  console.log("Filtering projects for type:", type);
+  
+  fetch('Architecture Projects copy.json')
+    .then(response => response.json())
+    .then(data => {
+      // Log the data to ensure it is fetched properly
+      console.log("Fetched project data:", data);
+
+      // Filter projects based on the type selected
+      const filteredProjects = data.filter(project => project.project_type === type);
+
+      // Log the filtered projects for debugging
+      console.log("Filtered projects:", filteredProjects);
+
+      renderProjects(filteredProjects);
+    })
+    .catch(error => {
+      console.error('Error fetching project data:', error);
+    });
+}
+
+// Ensure the filterProjects function runs when a button is clicked
+document.addEventListener('DOMContentLoaded', () => {
+  console.log("Page loaded and ready for project filtering.");
+});
+
+</script>
+</body>
+</html>
